@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+
+
 public class ObjectFactory {
 
     private ApplicationContext applicationContext;
@@ -37,10 +39,11 @@ public class ObjectFactory {
     private void populateProxyWrappers(ApplicationContext applicationContext) throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
         ObjectConfigReader objectConfigReader = applicationContext.getObjectConfigReader();
         for (Class<? extends ProxyWrapper> implClass : objectConfigReader.getImplClasses(ProxyWrapper.class)) {
-            proxyWrappers.add(implClass.getDeclaredConstructor().newInstance());
+            this.proxyWrappers.add(implClass.getDeclaredConstructor().newInstance());
         }
     }
 
+    //TODO:
     @SneakyThrows
     public <T> T createObject(Class<T> cls) {
         T obj = cls.getDeclaredConstructor().newInstance();

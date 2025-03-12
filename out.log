@@ -1,0 +1,50 @@
+[main] INFO org.reflections.Reflections - Reflections took 54 ms to scan 1 urls, producing 13 keys and 22 values
+UserInMemoryRepository constructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabsc.com, password=password123)]
+Sending email to gurgen@inconceptlabsc.com. Subject: Account confirmation. Body: Please confirm your newly created account
+[main] INFO org.reflections.Reflections - Reflections took 67 ms to scan 1 urls, producing 14 keys and 23 values
+UserInMemoryRepository constructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+no main manifest attribute, in ./target/java-di-1.0-SNAPSHOT.jar
+no main manifest attribute, in ./target/java-di-1.0-SNAPSHOT.jar
+[main] INFO org.reflections.Reflections - Reflections took 73 ms to scan 1 urls, producing 14 keys and 24 values
+UserInMemoryRepository constructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+[main] INFO org.reflections.Reflections - Reflections took 56 ms to scan 1 urls, producing 14 keys and 24 values
+UserInMemoryRepository constructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+[main] INFO org.reflections.Reflections - Reflections took 56 ms to scan 1 urls, producing 14 keys and 24 values
+UserInMemoryRepository constructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+[main] INFO org.reflections.Reflections - Reflections took 61 ms to scan 1 urls, producing 14 keys and 24 values
+UserInMemoryRepository constructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+[main] INFO org.reflections.Reflections - Reflections took 67 ms to scan 1 urls, producing 13 keys and 24 values
+UserInMemoryRepository constructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+[main] INFO org.reflections.Reflections - Reflections took 57 ms to scan 1 urls, producing 13 keys and 29 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:33)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:25)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more

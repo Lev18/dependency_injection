@@ -7,14 +7,18 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
+// Create reflection for scanning
 public class JavaObjectConfigReader implements ObjectConfigReader {
 
-    private Reflections reflections;
+    private final Reflections reflections;
 
     public JavaObjectConfigReader(String packageToScan) {
         this.reflections = new Reflections(packageToScan);
     }
 
+    // method checks is cls is interface
+    // if it is then it checks implementation of that interface
+    // if interface don't have multiple implementations then it returns that specific type
     @Override
     public <T> Class<? extends T> getImplClass(Class<T> cls) {
         if (!cls.isInterface()) {

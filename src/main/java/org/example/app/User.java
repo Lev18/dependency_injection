@@ -4,13 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.example.infrastructure.annotation.Property;
 
 @Setter
 @Getter
 @AllArgsConstructor
 @ToString
 public class User {
-
     private String username;
     private String email;
     private String password;

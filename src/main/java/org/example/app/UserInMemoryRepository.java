@@ -1,12 +1,14 @@
 package org.example.app;
 
+import org.example.infrastructure.annotation.Component;
 import org.example.infrastructure.annotation.Log;
-import org.example.infrastructure.annotation.Singleton;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Singleton
+
+// this class serves as imaginary db for user registration
+@Component
 @Log
 public class UserInMemoryRepository implements UserRepository {
 

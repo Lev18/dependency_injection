@@ -1,10 +1,12 @@
 package org.example.app;
 
 
+import org.example.infrastructure.annotation.Component;
 import org.example.infrastructure.annotation.Inject;
 import org.example.infrastructure.annotation.Log;
 
-@Log
+
+@Component
 public class UserRegistrationService {
 
     @Inject
@@ -12,6 +14,7 @@ public class UserRegistrationService {
 
     @Inject
     private EmailSender emailSender;
+
 
     public void register(User user) {
         User existingUser = userRepository.getUser(user.getUsername());
