@@ -1,5 +1,6 @@
 package org.example.infrastructure.configreader;
 
+import org.example.infrastructure.annotation.Qualifier;
 import org.reflections.Reflections;
 
 import java.util.Collection;
@@ -21,18 +22,23 @@ public class JavaObjectConfigReader implements ObjectConfigReader {
     // if interface don't have multiple implementations then it returns that specific type
     @Override
     public <T> Class<? extends T> getImplClass(Class<T> cls) {
-        if (!cls.isInterface()) {
-            return cls;
+
+        if (!cls.isAnnotationPresent(Qualifier.class)) {
+            if (!cls.isInterface()) {
+                return cls;
+            }
+            Set<Class<? extends T>> subTypesOf =
+                    reflections.getSubTypesOf(cls);
+
+            if (subTypesOf.size() != 1) {
+                throw new RuntimeException("Interface should have only one implementation");
+            }
+
+            return subTypesOf.iterator().next();
         }
+        Qualifier retImpl = cls.getAnnotation(Qualifier.class);
 
-        Set<Class<? extends T>> subTypesOf =
-                reflections.getSubTypesOf(cls);
-
-        if (subTypesOf.size() != 1) {
-            throw new RuntimeException("Interface should have only one implementation");
-        }
-
-        return subTypesOf.iterator().next();
+        return (Class<? extends T>) retImpl.value();
     }
 
     @Override

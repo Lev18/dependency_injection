@@ -3,6 +3,8 @@ package org.example.infrastructure;
 import lombok.Getter;
 import lombok.Setter;
 import org.example.infrastructure.annotation.Component;
+import org.example.infrastructure.annotation.Scope;
+import org.example.infrastructure.annotation.ScopeType;
 import org.example.infrastructure.configreader.ObjectConfigReader;
 
 import java.util.HashMap;
@@ -28,7 +30,6 @@ public class ApplicationContext {
     // checks does singleton cache contains object of that specific class
     // if it doesn't exist then it create an object with help objectFactory.createObject method
     // and put it into singleton cache
-    // TODO: change singleton to component as it can serve well for that annotation
     @SuppressWarnings("unchecked")
     public <T> T getObject(Class<T> cls) {
         Class<? extends T> implClass = objectConfigReader.getImplClass(cls);
@@ -40,7 +41,15 @@ public class ApplicationContext {
         T object = objectFactory.createObject(implClass);
 
         if (implClass.isAnnotationPresent(Component.class)) {
-            componentCache.put(implClass, object);
+            if (implClass.isAnnotationPresent(Scope.class)) {
+                ScopeType scopeType = implClass.getAnnotation(Scope.class).value();
+                if (scopeType.equals(ScopeType.SINGLETON)) {
+                    componentCache.put(implClass, object);
+                }
+            }
+            else {
+                componentCache.put(implClass, object);
+            }
         }
         return object;
     }
