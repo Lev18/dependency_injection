@@ -1,15 +1,17 @@
 package org.example.app;
 
 
-import org.example.infrastructure.annotation.Component;
-import org.example.infrastructure.annotation.Inject;
-import org.example.infrastructure.annotation.Log;
+import lombok.Getter;
+import org.example.infrastructure.annotation.*;
 
 
 @Component
+@Scope(ScopeType.SINGLETON)
 public class UserRegistrationService {
 
     @Inject
+    @Qualifier(UserInMemoryRepository.class)
+    @Getter
     private UserRepository userRepository;
 
     @Inject

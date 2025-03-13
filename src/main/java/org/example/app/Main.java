@@ -9,8 +9,8 @@ public class Main {
         ApplicationContext context = Application.run("org.example");
 
         UserRegistrationService registrationService = context.getObject(UserRegistrationService.class);
-        UserService userService = context.getObject(UserService.class);
-        userService.save_user();
+//        UserService userService = context.getObject(UserService.class);
+//        userService.save_user();
         registrationService.register(
                 new User(
                         "Gurgen",
@@ -18,5 +18,6 @@ public class Main {
                         "password123"
                 )
         );
+       System.out.println(registrationService.getUserRepository().getUser("Gurgen"));
     }
 }

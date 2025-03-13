@@ -1,17 +1,16 @@
 package org.example.app;
 
 
-import org.example.infrastructure.annotation.Component;
-import org.example.infrastructure.annotation.Inject;
-import org.example.infrastructure.annotation.Log;
-import org.example.infrastructure.annotation.Property;
+import org.example.infrastructure.annotation.*;
 
 import java.util.List;
 
 @Component
 public class UserService {
     @Inject
+    @Qualifier(UserInMemoryRepository.class)
     private UserRepository userRepository;
+
     @Property("emailService")
     private String emailService;
     public void save_user () {
