@@ -37,12 +37,12 @@ public class LogAnnotationProxyWrapper implements ProxyWrapper {
                             for (Method met : mets) {
                                 if (met.isAnnotationPresent(Log.class)) {
                                     System.out.printf(
-                                            "Calling methodioo: %s. Args: %s\n", met.getName(), Arrays.toString(args));
+                                            "Calling method: %s. Args: %s\n", met.getName(), Arrays.toString(args));
                                 }
                             }
                         } else {
                             System.out.printf(
-                                    "Calling methodsd: %s. Args: %s\n", method.getName(), Arrays.toString(args));
+                                    "Calling method: %s. Args: %s\n", method.getName(), Arrays.toString(args));
                         }
                         return method.invoke(obj, args);
                     }

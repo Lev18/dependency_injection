@@ -17,7 +17,8 @@ public class UserRegistrationService {
     @Inject
     private EmailSender emailSender;
 
-
+    public  UserRegistrationService() {
+    }
     public void register(User user) {
         User existingUser = userRepository.getUser(user.getUsername());
         if (existingUser != null) {
