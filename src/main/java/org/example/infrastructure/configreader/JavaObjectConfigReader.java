@@ -31,7 +31,7 @@ public class JavaObjectConfigReader implements ObjectConfigReader {
                     reflections.getSubTypesOf(cls);
 
             if (subTypesOf.size() != 1) {
-                throw new RuntimeException("Interface should have only one implementation");
+                throw new RuntimeException("Interface should have only one implementation or you should provide class type");
             }
 
             return subTypesOf.iterator().next();

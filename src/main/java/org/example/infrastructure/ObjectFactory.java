@@ -1,6 +1,7 @@
 package org.example.infrastructure;
 
 import lombok.SneakyThrows;
+import org.example.infrastructure.annotation.PostConstruct;
 import org.example.infrastructure.configreader.ObjectConfigReader;
 import org.example.infrastructure.configurator.ObjectConfigurator;
 import org.example.infrastructure.proxywrapper.ProxyWrapper;
@@ -17,6 +18,8 @@ public class ObjectFactory {
 
     private ApplicationContext applicationContext;
     private List<ObjectConfigurator> objectConfigurators = new ArrayList<>();
+    private List<ObjectConfigurator> objectConfigSecond = new ArrayList<>();
+
     private List<ProxyWrapper> proxyWrappers = new ArrayList<>();
 
     @SneakyThrows
@@ -31,7 +34,9 @@ public class ObjectFactory {
                 applicationContext.getObjectConfigReader().getImplClasses(ObjectConfigurator.class);
         for (Class<? extends ObjectConfigurator> implClass : implClasses) {
             ObjectConfigurator objectConfigurator = implClass.getDeclaredConstructor().newInstance();
-
+            if (implClass.isAnnotationPresent(PostConstruct.class)) {
+                this.objectConfigSecond.add(objectConfigurator);
+            }
             this.objectConfigurators.add(objectConfigurator);
         }
     }
@@ -50,6 +55,10 @@ public class ObjectFactory {
 
         for (ObjectConfigurator objectConfigurator : objectConfigurators) {
             objectConfigurator.configure(obj, applicationContext);
+        }
+
+        for (ObjectConfigurator objectConfig : objectConfigSecond) {
+            objectConfig.configure(obj, applicationContext);
         }
 
         for (ProxyWrapper proxyWrapper : proxyWrappers) {
