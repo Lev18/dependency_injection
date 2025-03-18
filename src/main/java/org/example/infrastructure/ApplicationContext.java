@@ -40,16 +40,15 @@ public class ApplicationContext {
 
         T object = objectFactory.createObject(implClass);
 
-        if (implClass.isAnnotationPresent(Component.class)) {
-            if (implClass.isAnnotationPresent(Scope.class)) {
-                ScopeType scopeType = implClass.getAnnotation(Scope.class).value();
-                if (scopeType.equals(ScopeType.SINGLETON)) {
-                    componentCache.put(implClass, object);
-                }
-            }
-            else {
+        if (implClass.isAnnotationPresent(Scope.class)) {
+            ScopeType scopeType = implClass.getAnnotation(Scope.class).value();
+            if (scopeType == null ||
+                    (scopeType != null && scopeType.equals(ScopeType.SINGLETON))) {
                 componentCache.put(implClass, object);
             }
+        }
+        else {
+            componentCache.put(implClass, object);
         }
         return object;
     }

@@ -6,6 +6,7 @@ import org.example.infrastructure.annotation.Env;
 
 import java.lang.reflect.Field;
 
+
 public class EnvAnnotationObjConfig implements ObjectConfigurator{
     @Override
     @SneakyThrows
@@ -14,11 +15,11 @@ public class EnvAnnotationObjConfig implements ObjectConfigurator{
         for (Field field : fields) {
             if (field.isAnnotationPresent(Env.class)) {
                 String envVarName = field.getAnnotation(Env.class).value();
-                if (envVarName.equals("")) {
+                if (!envVarName.equals("") && envVarName != null) {
                     envVarName = field.getName();
                 }
                 String envVarValue = System.getenv(envVarName);
-                if (envVarName != null) {
+                if (envVarValue != null) {
                     field.setAccessible(true);
                     field.set(obj, envVarValue);
                 }

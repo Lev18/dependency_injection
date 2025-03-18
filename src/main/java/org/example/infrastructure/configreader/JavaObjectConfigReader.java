@@ -1,5 +1,6 @@
 package org.example.infrastructure.configreader;
 
+import org.example.infrastructure.annotation.Component;
 import org.example.infrastructure.annotation.Qualifier;
 import org.reflections.Reflections;
 
@@ -21,9 +22,14 @@ public class JavaObjectConfigReader implements ObjectConfigReader {
     // if it is then it checks implementation of that interface
     // if interface don't have multiple implementations then it returns that specific type
     @Override
+    @SuppressWarnings("unchecked")
     public <T> Class<? extends T> getImplClass(Class<T> cls) {
 
-        if (!cls.isAnnotationPresent(Qualifier.class)) {
+            //TODO: add component annotation checking
+            if (!cls.isAnnotationPresent(Component.class)) {
+                throw new ClassUnmanagable(cls + " in not being  managed by the framework.\n" +
+                        " Please add @Component annotation for further use");
+            }
             if (!cls.isInterface()) {
                 return cls;
             }
@@ -35,10 +41,6 @@ public class JavaObjectConfigReader implements ObjectConfigReader {
             }
 
             return subTypesOf.iterator().next();
-        }
-        Qualifier retImpl = cls.getAnnotation(Qualifier.class);
-
-        return (Class<? extends T>) retImpl.value();
     }
 
     @Override

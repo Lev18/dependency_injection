@@ -18,6 +18,7 @@ public class CacheableAnnotationProxy implements ProxyWrapper {
    private final static Map<String, Object> localCache = new HashMap<>();
 
     @Override
+    @SuppressWarnings("unchecked")
     public <T> T wrap(T obj, Class<T> cls) {
 
         Method[] methods = cls.getMethods();

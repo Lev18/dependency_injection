@@ -48,3 +48,409 @@ Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()
 	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 68 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 61 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+Unrecognized option: -Xlint
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+[main] INFO org.reflections.Reflections - Reflections took 58 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 63 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 68 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 63 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 59 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 58 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 69 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 70 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 75 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 59 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 58 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 58 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 66 ms to scan 1 urls, producing 14 keys and 54 values
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:72)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.example.infrastructure.ObjectFactory.populateObjectConfigurators(ObjectFactory.java:36)
+	at org.example.infrastructure.ObjectFactory.<init>(ObjectFactory.java:28)
+	at org.example.infrastructure.Application.run(Application.java:11)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.getPath()" because "<local1>" is null
+	at org.example.infrastructure.configurator.ProperyAnnotationObjectConfig.<init>(ProperyAnnotationObjectConfig.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 6 more
+[main] INFO org.reflections.Reflections - Reflections took 62 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 59 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+Exception in thread "main" java.lang.NoClassDefFoundError: javassist/bytecode/ClassFile
+	at org.reflections.Reflections.getClassFile(Reflections.java:232)
+	at org.reflections.Reflections.lambda$scan$2(Reflections.java:185)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1715)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.ForEachOps$ForEachTask.compute(ForEachOps.java:291)
+	at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:754)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:667)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:160)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:765)
+	at org.reflections.Reflections.scan(Reflections.java:173)
+	at org.reflections.Reflections.<init>(Reflections.java:126)
+	at org.reflections.Reflections.<init>(Reflections.java:159)
+	at org.reflections.Reflections.<init>(Reflections.java:151)
+	at org.example.infrastructure.configreader.JavaObjectConfigReader.<init>(JavaObjectConfigReader.java:17)
+	at org.example.infrastructure.Application.run(Application.java:9)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.ClassNotFoundException: javassist.bytecode.ClassFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 21 more
+Exception in thread "main" java.lang.NoClassDefFoundError: javassist/bytecode/ClassFile
+	at org.reflections.Reflections.getClassFile(Reflections.java:232)
+	at org.reflections.Reflections.lambda$scan$2(Reflections.java:185)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1715)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.ForEachOps$ForEachTask.compute(ForEachOps.java:291)
+	at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:754)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:667)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:160)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:765)
+	at org.reflections.Reflections.scan(Reflections.java:173)
+	at org.reflections.Reflections.<init>(Reflections.java:126)
+	at org.reflections.Reflections.<init>(Reflections.java:159)
+	at org.reflections.Reflections.<init>(Reflections.java:151)
+	at org.example.infrastructure.configreader.JavaObjectConfigReader.<init>(JavaObjectConfigReader.java:17)
+	at org.example.infrastructure.Application.run(Application.java:9)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.ClassNotFoundException: javassist.bytecode.ClassFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 21 more
+[main] INFO org.reflections.Reflections - Reflections took 82 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 61 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 62 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 61 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+Exception in thread "main" java.lang.NoClassDefFoundError: javassist/bytecode/ClassFile
+	at org.reflections.Reflections.getClassFile(Reflections.java:232)
+	at org.reflections.Reflections.lambda$scan$2(Reflections.java:185)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1715)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.ForEachOps$ForEachTask.compute(ForEachOps.java:291)
+	at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:754)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:667)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:160)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:765)
+	at org.reflections.Reflections.scan(Reflections.java:173)
+	at org.reflections.Reflections.<init>(Reflections.java:126)
+	at org.reflections.Reflections.<init>(Reflections.java:159)
+	at org.reflections.Reflections.<init>(Reflections.java:151)
+	at org.example.infrastructure.configreader.JavaObjectConfigReader.<init>(JavaObjectConfigReader.java:17)
+	at org.example.infrastructure.Application.run(Application.java:9)
+	at org.example.app.Main.main(Main.java:9)
+Caused by: java.lang.ClassNotFoundException: javassist.bytecode.ClassFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 21 more
+[main] INFO org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 14 keys and 54 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+Calling method: getUser. Args: [Gurgen]
+Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)]
+Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
+Calling method: getUser. Args: [Gurgen]
+User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
