@@ -7,6 +7,7 @@ import org.example.infrastructure.configurator.ObjectConfigurator;
 import org.example.infrastructure.proxywrapper.ProxyWrapper;
 
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -34,9 +35,6 @@ public class ObjectFactory {
                 applicationContext.getObjectConfigReader().getImplClasses(ObjectConfigurator.class);
         for (Class<? extends ObjectConfigurator> implClass : implClasses) {
             ObjectConfigurator objectConfigurator = implClass.getDeclaredConstructor().newInstance();
-            if (implClass.isAnnotationPresent(PostConstruct.class)) {
-                this.objectConfigSecond.add(objectConfigurator);
-            }
             this.objectConfigurators.add(objectConfigurator);
         }
     }
@@ -57,8 +55,10 @@ public class ObjectFactory {
             objectConfigurator.configure(obj, applicationContext);
         }
 
-        for (ObjectConfigurator objectConfig : objectConfigSecond) {
-            objectConfig.configure(obj, applicationContext);
+        for (Method method : cls.getDeclaredMethods()) {
+            if (method.isAnnotationPresent(PostConstruct.class)) {
+                method.invoke(obj);
+            }
         }
 
         for (ProxyWrapper proxyWrapper : proxyWrappers) {

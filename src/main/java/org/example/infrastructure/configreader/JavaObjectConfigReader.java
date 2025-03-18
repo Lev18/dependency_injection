@@ -22,14 +22,8 @@ public class JavaObjectConfigReader implements ObjectConfigReader {
     // if it is then it checks implementation of that interface
     // if interface don't have multiple implementations then it returns that specific type
     @Override
-    @SuppressWarnings("unchecked")
     public <T> Class<? extends T> getImplClass(Class<T> cls) {
 
-            //TODO: add component annotation checking
-            if (!cls.isAnnotationPresent(Component.class)) {
-                throw new ClassUnmanagable(cls + " in not being  managed by the framework.\n" +
-                        " Please add @Component annotation for further use");
-            }
             if (!cls.isInterface()) {
                 return cls;
             }
@@ -37,11 +31,12 @@ public class JavaObjectConfigReader implements ObjectConfigReader {
                     reflections.getSubTypesOf(cls);
 
             if (subTypesOf.size() != 1) {
-                throw new RuntimeException("Interface should have only one implementation or you should provide class type");
+                throw new InterfaceHasMultipleImpl("Interface should have only one implementation or you should provide class type by @Qualifier  annotation");
             }
 
             return subTypesOf.iterator().next();
-    }
+        }
+
 
     @Override
     public <T> Collection<Class<? extends T>> getImplClasses(Class<T> cls) {

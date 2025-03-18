@@ -8,7 +8,7 @@ import java.util.List;
 public interface UserRepository {
 
     void save(User user);
-    @Cacheable
+    // @Cacheable
     User getUser(@CacheKey String username);
 
     List<User> getAll();

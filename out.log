@@ -454,3 +454,9 @@ Calling method: save. Args: [User(username=Gurgen, email=gurgen@inconceptlabs.co
 Sending email to gurgen@inconceptlabs.com. Subject: Account confirmation. Body: Please confirm your newly created account
 Calling method: getUser. Args: [Gurgen]
 User(username=Gurgen, email=gurgen@inconceptlabs.com, password=password123)
+[main] INFO org.reflections.Reflections - Reflections took 66 ms to scan 1 urls, producing 15 keys and 56 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call
+[main] INFO org.reflections.Reflections - Reflections took 58 ms to scan 1 urls, producing 15 keys and 56 values
+UserInMemoryRepository constructor call
+UserInMemoryRepository secondPhaseConstructor call

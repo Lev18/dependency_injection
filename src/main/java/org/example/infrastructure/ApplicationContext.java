@@ -3,12 +3,15 @@ package org.example.infrastructure;
 import lombok.Getter;
 import lombok.Setter;
 import org.example.infrastructure.annotation.Component;
+import org.example.infrastructure.annotation.Qualifier;
 import org.example.infrastructure.annotation.Scope;
 import org.example.infrastructure.annotation.ScopeType;
 import org.example.infrastructure.configreader.ObjectConfigReader;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
+
 
 // this class capture specific class context, caches singleton objects
 // and return object for specific type from objectFactory
@@ -32,6 +35,7 @@ public class ApplicationContext {
     // and put it into singleton cache
     @SuppressWarnings("unchecked")
     public <T> T getObject(Class<T> cls) {
+
         Class<? extends T> implClass = objectConfigReader.getImplClass(cls);
 
         if (componentCache.containsKey(implClass)) {

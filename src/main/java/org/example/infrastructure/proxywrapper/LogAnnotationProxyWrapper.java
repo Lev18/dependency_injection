@@ -1,5 +1,6 @@
 package org.example.infrastructure.proxywrapper;
 
+import lombok.SneakyThrows;
 import net.sf.cglib.proxy.Enhancer;
 import org.example.infrastructure.annotation.Log;
 
@@ -54,19 +55,19 @@ public class LogAnnotationProxyWrapper implements ProxyWrapper {
                 new net.sf.cglib.proxy.InvocationHandler() {
                     @Override
                     public Object invoke(Object o, Method method, Object[] args) throws Throwable {
-                        if (!cls.isAnnotationPresent(Log.class)) {
-                            Method [] mets = cls.getMethods();
-                            boolean logMethodAnnotationPresent = false;
-                            for (Method met : mets) {
-                                if (met.isAnnotationPresent(Log.class)) {
-                                    System.out.printf(
-                                            "Calling methodioo: %s. Args: %s\n", method.getName(), Arrays.toString(args));
-                                }
-                            }
-                        } else {
-                            System.out.printf(
-                                    "Calling methodsd: %s. Args: %s\n", method.getName(), Arrays.toString(args));
-                        }
+//                        if (!cls.isAnnotationPresent(Log.class)) {
+//                            Method [] mets = cls.getMethods();
+//                            boolean logMethodAnnotationPresent = false;
+//                            for (Method met : mets) {
+//                                if (met.isAnnotationPresent(Log.class)) {
+//                                    System.out.printf(
+//                                            "Calling method: %s. Args: %s\n", method.getName(), Arrays.toString(args));
+//                                }
+//                            }
+//                        } else {
+//                            System.out.printf(
+//                                    "Calling method: %s. Args: %s\n", method.getName(), Arrays.toString(args));
+//                        }
                         return method.invoke(obj, args);
                     }
                 }
