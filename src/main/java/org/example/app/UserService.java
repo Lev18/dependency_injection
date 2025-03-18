@@ -8,11 +8,12 @@ import java.util.List;
 @Component
 public class UserService {
     @Inject
-    @Qualifier(UserInMemoryRepository.class)
+    @Qualifier(UserInDb.class)
     private UserRepository userRepository;
 
     @Property("emailService")
     private String emailService;
+    @Log
     public void save_user () {
         System.out.println("New service was made");
         System.out.println("New email was set " + emailService);

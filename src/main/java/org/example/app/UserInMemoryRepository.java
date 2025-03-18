@@ -21,7 +21,7 @@ public class UserInMemoryRepository implements UserRepository {
     public void secondPhaseConstructor() {
         System.out.println("UserInMemoryRepository secondPhaseConstructor call");
     }
-    
+
     @Override
     public void save(User user) {
         users.add(user);
